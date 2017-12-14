@@ -1,0 +1,10 @@
+Package: ByteAnalitycsUtils
+Title: Funciones para Análisis de datos - Byte
+Version: 0.1
+Authors@R: person("Anthony", "Manosalva", email = "amanosalva@bytesw.com", role = c("aut", "cre"))
+Description: Este paquete contiene las funciones que se usarán para el análisis, limpieza, exploración de la data.
+Depends: R (>= 3.4.1)
+Imports:
+License: Byte
+Encoding: UTF-8
+LazyData: true
