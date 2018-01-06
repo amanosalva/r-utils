@@ -3,11 +3,11 @@ comparaVariablesCategoricas <- function(nombreVariable, dataset_prepago, dataset
 
   par(mfrow=c(3,1))
 
-  barplot(table(dataset_prepago[names(V4DATOFIN_pure) == nombreVariable]))
+  barplot(table(dataset_prepago[names(dataset_prepago) == nombreVariable]))
   title(paste(nombreVariable," - Prepago"))
-  barplot(table(dataset_postpago[names(V4DATOFIN_pure) == nombreVariable]))
+  barplot(table(dataset_postpago[names(dataset_postpago) == nombreVariable]))
   title(paste(nombreVariable," - Postpago"))
-  barplot(table(dataset_control[names(V4DATOFIN_pure) == nombreVariable]))
+  barplot(table(dataset_control[names(dataset_control) == nombreVariable]))
   title(paste(nombreVariable," - Control"))
 
 

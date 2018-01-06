@@ -3,9 +3,9 @@ comparaVariablesNumericas <- function(nombreVariable, dataset_prepago, dataset_p
 
   par(mfrow=c(3,1))
 
-  hist(unlist(dataset_prepago[names(V4DATOFIN_pure) == nombreVariable]), main = paste(nombreVariable," - Prepago"), xlab = nombreVariable, ylab = "Frecuencia")
-  hist(unlist(dataset_postpago[names(V4DATOFIN_pure) == nombreVariable]), main = paste(nombreVariable," - Postpago"), xlab = nombreVariable, ylab = "Frecuencia")
-  hist(unlist(dataset_control[names(V4DATOFIN_pure) == nombreVariable]), main = paste(nombreVariable," - Control"), xlab = nombreVariable, ylab = "Frecuencia")
+  hist(unlist(dataset_prepago[names(dataset_prepago) == nombreVariable]), main = paste(nombreVariable," - Prepago"), xlab = nombreVariable, ylab = "Frecuencia")
+  hist(unlist(dataset_postpago[names(dataset_postpago) == nombreVariable]), main = paste(nombreVariable," - Postpago"), xlab = nombreVariable, ylab = "Frecuencia")
+  hist(unlist(dataset_control[names(dataset_control) == nombreVariable]), main = paste(nombreVariable," - Control"), xlab = nombreVariable, ylab = "Frecuencia")
 
 
 }
